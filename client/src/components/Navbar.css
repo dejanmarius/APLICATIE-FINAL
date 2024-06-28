@@ -1,0 +1,42 @@
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .custom-modal {
+      max-width: 100% !important; /* Adjust width for screens less than 1200px */
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    .custom-modal-small {
+      margin-top: 1.5rem;
+      left: 5%; /* Adjust width for screens less than 1200px */
+    }
+  }
+
+  .user-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  ul li {
+    position: relative;
+    list-style: none; /* Elimină punctele de listă */
+    padding-bottom: 0.5rem; /* Spațiu pentru linia de sub */
+  }
+  
+  /* Stilul pentru linia subțire sub fiecare element */
+  ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Grosimea liniei */
+    background-color: #504ED7; /* Culoarea mov */
+    transition: width 0.3s ease-in-out; /* Efect de tranziție */
+  }
+  
+  /* Stilul pentru linia subțire sub elementele pe care se dă hover */
+  ul li:hover::after {
+    width: 100%; /* Linia se extinde pe toată lățimea elementului */
+  }
